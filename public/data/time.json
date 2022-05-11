@@ -1,0 +1,68 @@
+[
+  {
+    "timetable_id": 1,
+    "start_time": "21:35",
+    "end_time": "23:35",
+    "screening_type": "2D(자막)",
+    "movies_id": "부기나이트",
+    "theater_id": "강남",
+    "room": "1",
+    "tatal_seat_count": "40",
+    "now_seat_count": "38"
+  },
+  {
+    "timetable_id": 1,
+    "start_time": "21:35",
+    "end_time": "23:35",
+    "screening_type": "2D(자막)",
+    "movies_id": "부기나이트",
+    "theater_id": "강남",
+    "room": "1",
+    "tatal_seat_count": "40",
+    "now_seat_count": "38"
+  },
+  {
+    "timetable_id": 1,
+    "start_time": "21:35",
+    "end_time": "23:35",
+    "screening_type": "2D(자막)",
+    "movies_id": "부기나이트",
+    "theater_id": "강남",
+    "room": "1",
+    "tatal_seat_count": "40",
+    "now_seat_count": "38"
+  },
+  {
+    "timetable_id": 1,
+    "start_time": "21:35",
+    "end_time": "23:35",
+    "screening_type": "2D(자막)",
+    "movies_id": "부기나이트",
+    "theater_id": "강남",
+    "room": "1",
+    "tatal_seat_count": "40",
+    "now_seat_count": "38"
+  },
+  {
+    "timetable_id": 1,
+    "start_time": "21:35",
+    "end_time": "23:35",
+    "screening_type": "2D(자막)",
+    "movies_id": "부기나이트",
+    "theater_id": "강남",
+    "room": "1",
+    "tatal_seat_count": "40",
+    "now_seat_count": "38"
+  },
+  {
+    "timetable_id": 1,
+    "start_time": "21:35",
+    "end_time": "23:35",
+    "screening_type": "2D(자막)",
+    "movies_id": "부기나이트",
+    "theater_id": "강남",
+    "room": "1",
+    "tatal_seat_count": "40",
+    "now_seat_count": "38"
+  }
+]

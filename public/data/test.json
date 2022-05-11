@@ -1,0 +1,593 @@
+{
+  "date": "2022-05-14",
+  "movies_list": [
+    {
+      "movie_id": 1,
+      "movie_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-12.png"
+    },
+    {
+      "movie_id": 2,
+      "movie_name": "범죄도시 2",
+      "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-15.png"
+    },
+    {
+      "movie_id": 3,
+      "movie_name": "신비한 동물들과 덤블도어의 비밀",
+      "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-12.png"
+    },
+    {
+      "movie_id": 4,
+      "movie_name": "민스미트 작전",
+      "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-12.png"
+    },
+    {
+      "movie_id": 5,
+      "movie_name": "니 부모 얼굴이 보고 싶다",
+      "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-15.png"
+    }
+  ],
+  "regions_list": [
+    {
+      "region_id": 1,
+      "region_name": "서울",
+      "theaters": [
+        {
+          "theater_id": 1,
+          "theater_name": "코엑스"
+        },
+        {
+          "theater_id": 2,
+          "theater_name": "신촌"
+        },
+        {
+          "theater_id": 3,
+          "theater_name": "성수"
+        }
+      ]
+    },
+    {
+      "region_id": 2,
+      "region_name": "경기",
+      "theaters": [
+        {
+          "theater_id": 4,
+          "theater_name": "동탄"
+        },
+        {
+          "theater_id": 5,
+          "theater_name": "분당"
+        },
+        {
+          "theater_id": 6,
+          "theater_name": "하남스타필드"
+        },
+        {
+          "theater_id": 7,
+          "theater_name": "일산"
+        },
+        {
+          "theater_id": 8,
+          "theater_name": "의정부"
+        }
+      ]
+    },
+    {
+      "region_id": 3,
+      "region_name": "인천",
+      "theaters": [
+        {
+          "theater_id": 9,
+          "theater_name": "송도"
+        },
+        {
+          "theater_id": 10,
+          "theater_name": "인천논현"
+        },
+        {
+          "theater_id": 11,
+          "theater_name": "청라"
+        }
+      ]
+    },
+    {
+      "region_id": 4,
+      "region_name": "대전/충청/세종",
+      "theaters": [
+        {
+          "theater_id": 12,
+          "theater_name": "대전 유성"
+        },
+        {
+          "theater_id": 13,
+          "theater_name": "청주"
+        },
+        {
+          "theater_id": 14,
+          "theater_name": "세종"
+        }
+      ]
+    },
+    {
+      "region_id": 5,
+      "region_name": "부산/대구/경상",
+      "theaters": [
+        {
+          "theater_id": 15,
+          "theater_name": "대구"
+        },
+        {
+          "theater_id": 16,
+          "theater_name": "창원 내서"
+        },
+        {
+          "theater_id": 17,
+          "theater_name": "부산 해운대"
+        },
+        {
+          "theater_id": 18,
+          "theater_name": "구미"
+        }
+      ]
+    },
+    {
+      "region_id": 6,
+      "region_name": "광주/전라",
+      "theaters": [
+        {
+          "theater_id": 19,
+          "theater_name": "광주하남"
+        },
+        {
+          "theater_id": 20,
+          "theater_name": "전주"
+        },
+        {
+          "theater_id": 21,
+          "theater_name": "순천"
+        }
+      ]
+    },
+    {
+      "region_id": 7,
+      "region_name": "강원",
+      "theaters": [
+        {
+          "theater_id": 22,
+          "theater_name": "원주"
+        },
+        {
+          "theater_id": 23,
+          "theater_name": "남춘천"
+        }
+      ]
+    }
+  ],
+  "schedules_list": [
+    {
+      "timetable_id": 1,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 2,
+      "start_time": "13:30",
+      "end_time": "15:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 3,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 4,
+      "start_time": "19:30",
+      "end_time": "21:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 5,
+      "start_time": "21:30",
+      "end_time": "23:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 6,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 7,
+      "start_time": "12:30",
+      "end_time": "14:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 8,
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 9,
+      "start_time": "18:30",
+      "end_time": "20:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 10,
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 11,
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "movies_id": 2,
+      "movies_name": "범죄도시 2",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 12,
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "movies_id": 2,
+      "movies_name": "범죄도시 2",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 13,
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "movies_id": 3,
+      "movies_name": "신비한 동물들과 덤블도어의 비밀",
+      "screening_type": 3,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 14,
+      "start_time": "19:30",
+      "end_time": "21:30",
+      "movies_id": 3,
+      "movies_name": "신비한 동물들과 덤블도어의 비밀",
+      "screening_type": 3,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 15,
+      "start_time": "22:00",
+      "end_time": "23:40",
+      "movies_id": 4,
+      "movies_name": "민스미트 작전",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 16,
+      "start_time": "10:00",
+      "end_time": "11:40",
+      "movies_id": 4,
+      "movies_name": "민스미트 작전",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 17,
+      "start_time": "12:30",
+      "end_time": "14:30",
+      "movies_id": 5,
+      "movies_name": "니 부모 얼굴이 보고 싶다",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 18,
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "movies_id": 5,
+      "movies_name": "니 부모 얼굴이 보고 싶다",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 1,
+      "theater_name": "코엑스"
+    },
+    {
+      "timetable_id": 19,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 20,
+      "start_time": "13:30",
+      "end_time": "15:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 21,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "movies_id": 2,
+      "movies_name": "범죄도시 2",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 22,
+      "start_time": "19:30",
+      "end_time": "21:00",
+      "movies_id": 2,
+      "movies_name": "범죄도시 2",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 23,
+      "start_time": "22:00",
+      "end_time": "00:00",
+      "movies_id": 3,
+      "movies_name": "신비한 동물들과 덤블도어의 비밀",
+      "screening_type": 3,
+      "is_subtitle": true,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 24,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "movies_id": 3,
+      "movies_name": "신비한 동물들과 덤블도어의 비밀",
+      "screening_type": 3,
+      "is_subtitle": true,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 25,
+      "start_time": "12:30",
+      "end_time": "14:10",
+      "movies_id": 4,
+      "movies_name": "민스미트 작전",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 26,
+      "start_time": "15:00",
+      "end_time": "16:40",
+      "movies_id": 4,
+      "movies_name": "민스미트 작전",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 27,
+      "start_time": "18:30",
+      "end_time": "20:30",
+      "movies_id": 5,
+      "movies_name": "니 부모 얼굴이 보고 싶다",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 28,
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "movies_id": 5,
+      "movies_name": "니 부모 얼굴이 보고 싶다",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 2,
+      "theater_name": "신촌"
+    },
+    {
+      "timetable_id": 29,
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 30,
+      "start_time": "13:30",
+      "end_time": "15:30",
+      "movies_id": 1,
+      "movies_name": "닥터 스트레인지: 대혼돈의 멀티버스",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 31,
+      "start_time": "16:00",
+      "end_time": "17:30",
+      "movies_id": 2,
+      "movies_name": "범죄도시 2",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 32,
+      "start_time": "19:30",
+      "end_time": "21:00",
+      "movies_id": 2,
+      "movies_name": "범죄도시 2",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 33,
+      "start_time": "22:00",
+      "end_time": "00:00",
+      "movies_id": 3,
+      "movies_name": "신비한 동물들과 덤블도어의 비밀",
+      "screening_type": 3,
+      "is_subtitle": true,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 34,
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "movies_id": 3,
+      "movies_name": "신비한 동물들과 덤블도어의 비밀",
+      "screening_type": 3,
+      "is_subtitle": true,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 35,
+      "start_time": "12:30",
+      "end_time": "14:10",
+      "movies_id": 4,
+      "movies_name": "민스미트 작전",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 36,
+      "start_time": "15:00",
+      "end_time": "16:40",
+      "movies_id": 4,
+      "movies_name": "민스미트 작전",
+      "screening_type": 2,
+      "is_subtitle": true,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 37,
+      "start_time": "18:30",
+      "end_time": "20:30",
+      "movies_id": 5,
+      "movies_name": "니 부모 얼굴이 보고 싶다",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 3,
+      "theater_name": "성수"
+    },
+    {
+      "timetable_id": 38,
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "movies_id": 5,
+      "movies_name": "니 부모 얼굴이 보고 싶다",
+      "screening_type": 2,
+      "is_subtitle": false,
+      "theater_id": 3,
+      "theater_name": "성수"
+    }
+  ],
+  "user_price": [
+    {
+      "ADULT": 12000,
+      "TEENAGER": 9000,
+      "KID": 5000
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+// MOVIES
+[
+  {
+  "movie_id"   : 1 ,
+  "movie_name" : "닥터 스트레인지: 대혼돈의 멀티버스",
+  "age_grade"  : "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-12.png"
+}]
+
+// THEATERS
+
+[
+  {
+  "theater_id"   : 1,
+  "region_id"    : 1,
+  "region_name"  : "서울",
+  "theater_name" : "코엑스",
+}]
+
+
+// TIMETABLE
+[
+  {
+  "timetable_id"     : 1,
+  "start_time"       : "2022-05-20 11:00:00",
+  "end_time"         : "2022-05-20 11:00:00"+"상영시간(120분)",
+  "is_subtitle"      : "1",
+  "screening_type"   : "2D(자막)",
+  "theater_name"     : "코엑스",
+  "room"             : "1관",
+  "tatal_seat_count" : "40",
+  "now_seat_count"   : "40"- "예약한 자리 수",
+}]
+
+// 타임존인지 스트링인지
+// 스타트 데이터 형식
+// 엔드 데이터 형식
+// 토탈시트
+// 나우시트 
+
+
+
+
+
+
+
