@@ -27,8 +27,8 @@ function Nav() {
           alt="테라박스로고"
           src={
             detectLocation
-              ? 'images/TerraBoxLogoNewBlack.png'
-              : 'images/TerraBoxLogoNewWhite.png'
+              ? '/images/TerraBoxLogoNewBlack.png'
+              : '/images/TerraBoxLogoNewWhite.png'
           }
         />
       </Link>
@@ -64,7 +64,6 @@ const NavWrapper = styled.div`
   align-items: flex-end;
   text-align: center;
   padding: 30px 100px;
-  margin-bottom: 10px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   color: ${props => (props.detectLocation ? 'white' : 'rgb(25, 16, 15)')};
   background-color: ${props =>
@@ -98,6 +97,6 @@ const NavElements = styled.div`
 
 const NavElementsLoggedIn = styled.div`
   cursor: pointer;
-  font-size: 15px;
-  color: ${props => props.theme.lightgreen};
+  font-size: 20px;
+  color: ${props => props.theme.gold};
 `;
