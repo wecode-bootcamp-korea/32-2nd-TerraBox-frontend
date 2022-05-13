@@ -23,13 +23,14 @@ function Nav() {
         <NavElements>극장</NavElements>
       </Navigators>
       <Link to="/">
-        <img
+        <LogoImage
           alt="테라박스로고"
           src={
             detectLocation
-              ? '/images/TerraBoxLogoNewBlack.png'
+              ? '/images/MainNavLogo.png'
               : '/images/TerraBoxLogoNewWhite.png'
           }
+          detectLocation={detectLocation}
         />
       </Link>
       <Navigators>
@@ -69,11 +70,6 @@ const NavWrapper = styled.div`
   background-color: ${props =>
     props.detectLocation ? 'rgb(25, 16, 15)' : 'white'};
 
-  img {
-    width: 260px;
-    cursor: pointer;
-  }
-
   a {
     text-decoration: none;
     color: ${props => (props.detectLocation ? 'white' : 'rgb(25, 16, 15)')};
@@ -99,4 +95,9 @@ const NavElementsLoggedIn = styled.div`
   cursor: pointer;
   font-size: 20px;
   color: ${props => props.theme.gold};
+`;
+
+const LogoImage = styled.img`
+  width: ${props => (props.detectLocation ? '155px' : '255px')};
+  cursor: pointer;
 `;

@@ -10,7 +10,7 @@ function Main() {
     fetch('http://15.164.163.31:8000/movies')
       .then(res => res.json())
       .then(data => setMovies(data.result));
-  });
+  }, []);
 
   const leftClickHandler = () => {
     return index !== 1 && setIndex(prev => prev - 1);
