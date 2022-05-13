@@ -15,7 +15,7 @@ function Redirect() {
     .then(res => res.json())
     .then(kakaoData => {
       if (kakaoData.access_token) {
-        fetch('http://10.58.7.229:8000/users/login', {
+        fetch('http://10.58.6.129:8000/users/login', {
           method: 'POST',
           headers: {
             Authorization: kakaoData.access_token,
