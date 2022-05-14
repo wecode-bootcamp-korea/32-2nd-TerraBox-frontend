@@ -7,6 +7,7 @@ import Detail from './pages/Detail/Detail';
 import Booking from './pages/Booking/Booking';
 import Main from './pages/Main/Main';
 import Redirect from './pages/Login/Redirect';
+import FooterMap from './components/FooterMap';
 
 const Router = () => {
   return (
