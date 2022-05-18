@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Detail from './pages/Detail/Detail';
 import Booking from './pages/Booking/Booking';
 import Main from './pages/Main/Main';
+import Redirect from './pages/Login/Redirect';
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/oauth/callback/kakao" element={<Redirect />} />
       </Routes>
       <Footer />
     </BrowserRouter>
