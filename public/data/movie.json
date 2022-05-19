@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-15.png",
+    "name": "부기나이트"
+  },
+  {
+    "id": 2,
+    "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-12.png",
+    "name": "닥터스트레인지 : 대혼돈의 멀티버스"
+  },
+  {
+    "id": 3,
+    "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-15.png",
+    "name": "극장판 귀멸의 칼날 : 무한열차편"
+  },
+  {
+    "id": 4,
+    "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-15.png",
+    "name": "니 부모 얼굴이 보고싶다"
+  },
+  {
+    "id": 5,
+    "age_grade": "https://img.megabox.co.kr/static/pc/images/common/txt/txt-age-small-12.png",
+    "name": "앵커"
+  }
+]
+
+
+
+
+
+
+http://10.58.0.92:8000/Reserve
+http://10.58.0.92:8000/Reserve?movie_id=${selectedMovie}
+http://10.58.0.92:8000/Reserve?movie_id=${selectedMovie}&theater_id=${selectedTheater}

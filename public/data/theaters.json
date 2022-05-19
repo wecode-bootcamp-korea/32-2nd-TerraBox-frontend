@@ -1,0 +1,20 @@
+[
+  {
+    "region_id": 1,
+    "region_name": "서울",
+    "theater_region": [
+      {
+        "theater_id": 1,
+        "theater_name": "강남"
+      },
+      {
+        "theater_id": 2,
+        "theater_name": "강북"
+      },
+      {
+        "theater_id": 3,
+        "theater_name": "잠실"
+      }
+    ]
+  }
+]
