@@ -7,7 +7,7 @@ function PostCards({ moviePosts, moviesCount }) {
   const [file, setFile] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const [opacity, setOpacity] = useState(0);
-  
+
   function handleUpload(e) {
     setFile(URL.createObjectURL(e.target.files[0]));
   }
@@ -160,7 +160,7 @@ const MoviePostContainer = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-cotent: center;
+  justify-content: center;
   align-items: center;
   height: 750px;
 `;
