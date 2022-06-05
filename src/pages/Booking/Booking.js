@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
+<<<<<<< HEAD
+import styled from 'styled-components';
+import AllMovieList from './AllMovieList';
+import AllTheatersList from './AllTheatersList';
+import AllTimeList from './AllTimeList';
+import { requestMovieApi } from './module/requestMoviApi';
+import { requestTimeData } from './module/requsetTimeAPI';
+=======
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+>>>>>>> 522e9c767ac5980c50b910d8f2403c5124d4d157
 
 function Booking() {
   const [movieData, setMovieData] = useState([]);
@@ -10,6 +19,52 @@ function Booking() {
   const [selectedRegion, setSelectedRegion] = useState('');
   const [regionTheaters, setRegionTheaters] = useState([]);
   const [selectedTheater, setSelectedTheater] = useState('');
+<<<<<<< HEAD
+
+  useEffect(() => {
+    requestMovieApi.getMoiveList(setMovieData);
+  }, []);
+
+  useEffect(() => {
+    requestMovieApi.getRegionList(setTheatersData);
+  }, []);
+
+  useEffect(() => {
+    requestTimeData({
+      selectedMovie,
+      selectedTheater,
+      selectedRegion,
+      setTimeData,
+    });
+  }, [selectedMovie, selectedTheater, selectedRegion]);
+
+  return (
+    <StyledWrapper>
+      <Title>빠른예매</Title>
+
+      <BookinWrapper>
+        <AllMovieList
+          movieData={movieData}
+          selectedMovie={selectedMovie}
+          setSelectedMovie={setSelectedMovie}
+          setSelectedTheater={setSelectedTheater}
+          setSelectedRegion={setSelectedRegion}
+          setRegionTheaters={setRegionTheaters}
+          setTimeData={setTimeData}
+        />
+        <AllTheatersList
+          theatersData={theatersData}
+          selectedRegion={selectedRegion}
+          regionTheaters={regionTheaters}
+          setRegionTheaters={setRegionTheaters}
+          setSelectedRegion={setSelectedRegion}
+          selectedTheater={selectedTheater}
+          setSelectedTheater={setSelectedTheater}
+        />
+
+        <AllTimeList timeData={timeData} selectedTheater={selectedTheater} />
+      </BookinWrapper>
+=======
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -173,6 +228,7 @@ function Booking() {
           </TimeWrapper>
         </BookinWrapper>
       </bookingbigwrapper>
+>>>>>>> 522e9c767ac5980c50b910d8f2403c5124d4d157
     </StyledWrapper>
   );
 }
@@ -194,6 +250,11 @@ const BookinWrapper = styled.div`
   display: flex;
 
   width: 1100px;
+<<<<<<< HEAD
+  border-top: 1px solid black !important;
+  border: 1px solid #d8d9db;
+`;
+=======
   /* height: 530px; */
   border-top: 1px solid black !important;
   border: 1px solid #d8d9db;
@@ -396,3 +457,4 @@ const Room = styled.div``;
 const Nowseat = styled.div`
   color: #01738a;
 `;
+>>>>>>> 522e9c767ac5980c50b910d8f2403c5124d4d157
