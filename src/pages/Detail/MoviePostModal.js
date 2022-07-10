@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Modal, { ModalProvider, BaseModalBackground } from 'styled-react-modal';
 import Card from './Card';
 
-function  PostCards({ moviePosts, moviesCount }) {
+function PostCards({ moviePosts, moviesCount }) {
   const [file, setFile] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const [opacity, setOpacity] = useState(0);
@@ -15,7 +15,7 @@ function  PostCards({ moviePosts, moviesCount }) {
   function toggleModal(e) {
     setOpacity(0);
     setIsOpen(!isOpen);
-  } 
+  }
 
   function afterOpen() {
     setTimeout(() => {
