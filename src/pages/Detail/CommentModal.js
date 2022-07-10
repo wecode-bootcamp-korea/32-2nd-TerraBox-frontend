@@ -13,7 +13,7 @@ function CommentModal({ setData, setDep, movieTitle }) {
   const [comment, setComment] = useState();
 
   const clickUploadCommtent = () => {
-    fetch(`http://10.58.6.129:8000/movies/${params.id}/reviews`, {
+    fetch(`http://15.164.163.31:8000/movies/${params.id}/reviews`, {
       method: 'POST',
       headers: {
         Authorization: localStorage.getItem('token'),
@@ -25,7 +25,7 @@ function CommentModal({ setData, setDep, movieTitle }) {
       .then(res => res.json())
       .then(res => {
         if (res.message === 'created!') {
-          fetch(`http://10.58.6.129:8000/movies/${params.id}`).then(res =>
+          fetch(`http://15.164.163.31/movies/${params.id}`).then(res =>
             res.json()
           );
         }
@@ -126,12 +126,14 @@ function CommentTitle({ setDep }) {
     </ModalProvider>
   );
 }
+
 const CommentBoxContainer = styled.div`
   width: 100%;
   height: 100%;
-  display:flex
-  flex-direction:row;
+  display: flex;
+  flex-direction: column;
 `;
+
 const CommentCounterContainer = styled.div`
   width: 100%;
   height: 150px;
@@ -171,6 +173,7 @@ const StarCounter = styled.div`
   align-items: center;
   font-weight: lighter;
 `;
+
 const StyledModal = Modal.styled`
   width: 40rem;
   height: 50rem;
@@ -179,7 +182,8 @@ const StyledModal = Modal.styled`
   justify-content: center;
   background-color: white;
   opacity: ${props => props.opacity};
-  transition : all 0.3s ease-in-out;`;
+  transition: all 0.3s ease-in-out;
+`;
 
 const ModalContainer = styled.div`
   width: 150px;
@@ -196,6 +200,7 @@ const CommentIconContainer = styled.div`
   margin-right: 5px;
   color: rgb(102, 102, 102);
 `;
+
 const WriteComment = styled.div`
   font-size: 15px;
   color: rgb(102, 102, 102);
@@ -290,7 +295,7 @@ const MovieTitleBottom = styled.div`
 `;
 
 const CommentBox = styled.textarea`
-  width: 100%;
+  width: 300px;
   height: 200px;
   margin-top: 20px;
   font-size: 20px;

@@ -6,7 +6,7 @@ export default function Comment({ setData, comment, index }) {
   const params = useParams();
   const clickDeleteButton = e => {
     fetch(
-      `http://10.58.6.129:8000/movies/${params.id}/reviews/${e.target.id}`,
+      `http://15.164.163.31:8000/movies/${params.id}/reviews/${e.target.id}`,
       {
         method: 'DELETE',
         headers: {
@@ -85,10 +85,10 @@ const OthersComment = styled.div`
   display: flex;
   align-items: center;
   background-color: rgb(248, 248, 250);
-  border: 5px solid rgb(234,234,234)
+  border: 5px solid rgb(234, 234, 234);
   border-radius: 15px;
   justify-content: space-between;
-  padding-left:20px;
+  padding-left: 20px;
 `;
 
 const CommentUserInfo = styled.div`

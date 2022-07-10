@@ -15,7 +15,7 @@ function Redirect() {
     .then(res => res.json())
     .then(kakaoData => {
       if (kakaoData.access_token) {
-        fetch('http://10.58.6.129:8000/users/login', {
+        fetch('http://15.164.163.31:8000/users/login', {
           method: 'POST',
           headers: {
             Authorization: kakaoData.access_token,
@@ -23,7 +23,7 @@ function Redirect() {
         })
           .then(data => data.json())
           .then(addData => {
-            if ((addData.message = 'success')) {
+            if ((addData.message = 'success!')) {
               localStorage.setItem('token', addData.JWT_ACCESS_TOKEN);
               localStorage.setItem('nickname', addData.nickname);
               localStorage.setItem('profileIcon', addData.profile_image_url);

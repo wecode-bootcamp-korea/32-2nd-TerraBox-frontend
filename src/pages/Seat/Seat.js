@@ -22,7 +22,7 @@ function Seat() {
 
   useEffect(() => {
     fetch(
-      `http://10.58.0.92:8000/Reserve/seatlist?movietheater_id=${movie_theater_id}`
+      `http://15.164.163.31:8000/Reserve/seatlist?movietheater_id=${movie_theater_id}`
     )
       .then(res => res.json())
       .then(data => {
@@ -32,7 +32,7 @@ function Seat() {
   }, [movie_theater_id]);
 
   useEffect(() => {
-    fetch('http://10.58.0.92:8000/Reserve/price')
+    fetch('http://15.164.163.31:8000/Reserve/price')
       .then(res => res.json())
       .then(data => setUserType(data.price_list));
   }, []);
@@ -93,7 +93,7 @@ function Seat() {
         ...prev,
         {
           user_id: localStorage.getItem('token'),
-          movie_theater_id,
+          // movie_theater_id,
           type: selectedUser[0],
           price: priceInfo[0],
           seat_id: row.id,
@@ -114,7 +114,7 @@ function Seat() {
 
   const submitReservation = () => {
     if (totalNumber === selectedRows.length) {
-      fetch('http://10.58.0.92:8000/Reserve', {
+      fetch('http://15.164.163.31:8000/Reserve', {
         method: 'POST',
         headers: { Authorization: localStorage.getItem('token') },
         body: JSON.stringify(selected),

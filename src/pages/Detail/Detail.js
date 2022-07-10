@@ -10,7 +10,7 @@ export default function Detail() {
   const { id } = params;
 
   useEffect(() => {
-    fetch(`http://10.58.6.129:8000/movies/${id}`)
+    fetch(`http://15.164.163.31:8000/movies/${id}`)
       .then(response => response.json())
       .then(data => setData(data.result));
   }, [dep]);
