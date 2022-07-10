@@ -13,7 +13,7 @@ function Booking() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://10.58.0.92:8000/Reserve/movie')
+    fetch('http://15.164.163.31:8000/Reserve/movie')
       .then(res => res.json())
       .then(data => {
         setMovieData(data.movies);
@@ -21,7 +21,7 @@ function Booking() {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.0.92:8000/Reserve/region')
+    fetch('http://15.164.163.31:8000/Reserve/region')
       .then(res => res.json())
       .then(data => {
         setTheatersData(data.regions);
@@ -30,7 +30,8 @@ function Booking() {
 
   useEffect(() => {
     fetch(
-      `http://10.58.0.92:8000/Reserve/movietheater?movie_id=${selectedMovie}&theater_id=${selectedTheater}`
+      // `http://15.164.163.31:8000/Reserve/movietheater?movie_id=${selectedMovie}&theater_id=${selectedTheater}`
+      'http://15.164.163.31:8000/Reserve/movietheater?movie_id=1&theater_id=1'
     )
       .then(res => res.json())
       .then(data => {
@@ -238,6 +239,7 @@ const MovieList = styled.div`
   padding: 4px 0px 4px 7px;
   background-color: ${props =>
     props.selectedMovie === props.movie ? 'gray' : 'white'};
+  cursor: pointer;
 `;
 
 const MovieListMovieName = styled.div`
@@ -284,9 +286,9 @@ const TheatersRegionWrapper = styled.div`
 const TheatersList = styled.div`
   display: flex;
   padding-bottom: 7px;
-
   background-color: ${props =>
     props.theater === props.selectedRegion ? 'gainsboro' : 'white'};
+  cursor: pointer;
 
   > div {
     padding: 6px 0px 5px 10px;
@@ -304,6 +306,8 @@ const RegionItem = styled.div`
   padding-bottom: 7px;
   background-color: ${props =>
     props.regionId === props.regionTheatersId ? 'gray' : 'white'};
+  cursor: pointer;
+
   > div {
     padding: 6px 70px 5px 10px;
     font-size: 13px;
@@ -342,6 +346,7 @@ const TimeLine = styled.div`
   width: 558px;
   height: 52px;
   display: flex;
+  cursor: pointer;
 
   &:hover {
     background-color: gainsboro;

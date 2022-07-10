@@ -23,7 +23,7 @@ function Redirect() {
         })
           .then(data => data.json())
           .then(addData => {
-            if ((addData.message = 'success')) {
+            if ((addData.message = 'success!')) {
               localStorage.setItem('token', addData.JWT_ACCESS_TOKEN);
               localStorage.setItem('nickname', addData.nickname);
               localStorage.setItem('profileIcon', addData.profile_image_url);
