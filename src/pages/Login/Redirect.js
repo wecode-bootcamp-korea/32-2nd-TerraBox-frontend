@@ -29,10 +29,10 @@ function Redirect() {
               localStorage.setItem('profileIcon', addData.profile_image_url);
             }
             //닉네임, 토큰값
+            alert('TERRA BOX에 오신 걸 환영합니다 :)');
+            goToMain('/');
+            window.location.reload();
           });
-        alert('TERRA BOX에 오신 걸 환영합니다 :)');
-        goToMain('/');
-        window.location.reload();
       }
     });
 
