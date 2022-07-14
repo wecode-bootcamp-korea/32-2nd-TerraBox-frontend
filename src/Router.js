@@ -8,6 +8,7 @@ import Booking from './pages/Booking/Booking';
 import Main from './pages/Main/Main';
 import Redirect from './pages/Login/Redirect';
 import Seat from './pages/Seat/Seat';
+import Mypage from './pages/Mypage/Mypage';
 import FooterMap from './components/FooterMap';
 
 const Router = () => {
@@ -21,6 +22,7 @@ const Router = () => {
         <Route path="/booking" element={<Booking />} />
         <Route path="/oauth/callback/kakao" element={<Redirect />} />
         <Route path="/seat" element={<Seat />} />
+        <Route path="/mypage" element={<Mypage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

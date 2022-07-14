@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import DropDown from './DropDown';
 
 function Nav() {
+  const [drop, setDrop] = useState(false);
   const logOutProcess = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('nickname');
+    localStorage.removeItem('profileIcon');
     window.location.reload();
   };
 
@@ -13,45 +16,52 @@ function Nav() {
 
   const detectLocation = location.pathname === '/';
 
+  const dropDownMenu = () => {
+    setDrop(prev => !prev);
+  };
+
+  const dropDownOff = () => {
+    setDrop(false);
+  };
+
   return (
-    <NavWrapper detectLocation={detectLocation}>
-      <Navigators>
-        <NavElements>영화</NavElements>
-        <NavElements>
-          <Link to="/booking">예매</Link>
-        </NavElements>
-        <NavElements>극장</NavElements>
-      </Navigators>
-      <Link to="/">
-        <LogoImage
-          alt="테라박스로고"
-          src={
-            detectLocation
-              ? '/images/MainNavLogo.png'
-              : '/images/TerraBoxLogoNewWhite.png'
-          }
-          detectLocation={detectLocation}
-        />
-      </Link>
-      <Navigators>
-        <NavElements>이벤트</NavElements>
-        <NavElements>스토어</NavElements>
-        {localStorage.getItem('token') ? (
-          <>
-            <NavElementsLoggedIn>
-              {localStorage.getItem('nickname')}님
-            </NavElementsLoggedIn>
-            <NavElementsLoggedIn onClick={logOutProcess}>
-              로그아웃
-            </NavElementsLoggedIn>
-          </>
-        ) : (
-          <Link to="/login">
-            <i className="fa-solid fa-user" pathname={location.pathname} />
-          </Link>
-        )}
-      </Navigators>
-    </NavWrapper>
+    <>
+      <NavWrapper detectLocation={detectLocation}>
+        <Navigators>
+          <NavElements onClick={dropDownOff}>영화</NavElements>
+          <NavElements onClick={dropDownOff}>
+            <Link to="/booking">예매</Link>
+          </NavElements>
+          <NavElements onClick={dropDownOff}>극장</NavElements>
+        </Navigators>
+        <Link to="/">
+          <LogoImage
+            alt="테라박스로고"
+            src={
+              detectLocation
+                ? '/images/MainNavLogo.png'
+                : '/images/TerraBoxLogoNewWhite.png'
+            }
+            detectLocation={detectLocation}
+          />
+        </Link>
+        <Navigators>
+          <NavElements onClick={dropDownOff}>이벤트</NavElements>
+          <NavElements onClick={dropDownOff}>스토어</NavElements>
+          <i className="fa-solid fa-user" onClick={dropDownMenu} />
+        </Navigators>
+      </NavWrapper>
+      {drop && <DropDown setDrop={setDrop} />}
+      {localStorage.getItem('token') ? (
+        <LoginText detectLocation={detectLocation} onClick={logOutProcess}>
+          로그아웃
+        </LoginText>
+      ) : (
+        <Link to="/login">
+          <LoginText detectLocation={detectLocation}>로그인</LoginText>
+        </Link>
+      )}
+    </>
   );
 }
 
@@ -84,6 +94,7 @@ const Navigators = styled.div`
 
   .fa-user {
     color: ${props => props.theme.lightgreen};
+    cursor: pointer;
   }
 `;
 
@@ -91,13 +102,18 @@ const NavElements = styled.div`
   cursor: pointer;
 `;
 
-const NavElementsLoggedIn = styled.div`
-  cursor: pointer;
-  font-size: 20px;
-  color: ${props => props.theme.gold};
-`;
-
 const LogoImage = styled.img`
   width: ${props => (props.detectLocation ? '155px' : '255px')};
+  cursor: pointer;
+`;
+
+const LoginText = styled.div`
+  position: absolute;
+  color: ${props => (props.detectLocation ? 'white' : 'black')};
+  top: 0;
+  right: 20%;
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 700;
   cursor: pointer;
 `;
