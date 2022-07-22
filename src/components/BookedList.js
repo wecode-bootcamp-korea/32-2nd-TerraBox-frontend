@@ -5,6 +5,7 @@ function BookedList() {
   return (
     <ListBox>
       <BookTitle>예약 내역</BookTitle>
+      <BookedItem />
     </ListBox>
   );
 }
@@ -21,3 +22,5 @@ const BookTitle = styled.div`
   padding-bottom: 15px;
   border-bottom: 1px solid;
 `;
+
+const BookedItem = styled.div``;
