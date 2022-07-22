@@ -43,6 +43,7 @@ function Nav() {
                 : '/images/TerraBoxLogoNewWhite.png'
             }
             detectLocation={detectLocation}
+            onClick={dropDownOff}
           />
         </Link>
         <Navigators>
