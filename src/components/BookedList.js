@@ -14,6 +14,7 @@ export default BookedList;
 
 const ListBox = styled.div`
   width: 100%;
+  margin-bottom: 70px;
 `;
 
 const BookTitle = styled.div`
