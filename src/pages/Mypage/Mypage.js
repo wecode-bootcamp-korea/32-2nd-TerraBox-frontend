@@ -34,6 +34,7 @@ function Mypage() {
         <MyPageBox point={point} />
         <BookedList />
         <ReviewList userReviews={userReviews} />
+        <MoviePostList userReviews={userReviews} />
       </MypageMain>
     </Wrapper>
   );
