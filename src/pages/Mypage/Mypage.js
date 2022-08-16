@@ -10,14 +10,14 @@ function Mypage() {
   const [userReviews, setUserReviews] = useState([]);
   const point = 1000;
 
-  // useEffect(() => {
-  //   fetch('http://15.164.163.31:8000/reviews/usermoviereviews', {
-  //     method: 'GET',
-  //     headers: { Authorization: localStorage.getItem('token') },
-  //   })
-  //     .then(res => res.json())
-  //     .then(data => setUserReviews(data.moviereviews));
-  // }, []);
+  useEffect(() => {
+    fetch('http://15.164.163.31:8000/reviews/usermoviereviews', {
+      method: 'GET',
+      headers: { Authorization: localStorage.getItem('token') },
+    })
+      .then(res => res.json())
+      .then(data => setUserReviews(data.moviereviews));
+  }, []);
 
   useEffect(() => {
     fetch('http://15.164.163.31:8000/reviews/usermovieposts', {
@@ -34,6 +34,7 @@ function Mypage() {
         <MyPageBox point={point} />
         <BookedList />
         <ReviewList userReviews={userReviews} />
+        <MoviePostList userReviews={userReviews} />
       </MypageMain>
     </Wrapper>
   );

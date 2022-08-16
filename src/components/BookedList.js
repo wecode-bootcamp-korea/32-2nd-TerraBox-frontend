@@ -5,6 +5,7 @@ function BookedList() {
   return (
     <ListBox>
       <BookTitle>예약 내역</BookTitle>
+      예약내역이 없습니ㅏㄷ
       <BookedItem />
     </ListBox>
   );
@@ -14,7 +15,7 @@ export default BookedList;
 
 const ListBox = styled.div`
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 `;
 
 const BookTitle = styled.div`
