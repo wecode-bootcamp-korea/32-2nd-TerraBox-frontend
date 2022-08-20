@@ -19,6 +19,7 @@ function Login() {
             >
               <img alt="kakaoBtn" src="/images/kakaoLoginBtn.png" />
             </a>
+            <div>구글</div>
           </ContainerBtn>
           <ContainerLinks>
             <ContainerSpan>
