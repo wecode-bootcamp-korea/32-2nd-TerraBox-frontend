@@ -5,6 +5,11 @@ import Carousel from './Carousel';
 function Main() {
   const [index, setIndex] = useState(1);
   const [movies, setMovies] = useState([]);
+  const [a, setA] = useState({
+    id: 0,
+    info_list: [],
+    msg: '',
+  });
 
   useEffect(() => {
     fetch('http://15.164.163.31:8000/movies')
@@ -24,9 +29,16 @@ function Main() {
     setIndex(input);
   };
 
+  const testHandle = () => {
+    setA({ ...a, msg: '안녕하세요', id: 5 });
+  };
+
+  console.log(a);
+
   return (
     <MainWrapper>
-      <span>박스오피스</span>
+      <span onClick={testHandle}>박스오피스</span>
+      {a.msg}
       <Carousel
         index={index}
         movies={movies}
