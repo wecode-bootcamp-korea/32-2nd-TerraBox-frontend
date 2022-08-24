@@ -33,8 +33,6 @@ function Main() {
     setA({ ...a, msg: '안녕하세요', id: 5 });
   };
 
-  console.log(a);
-
   return (
     <MainWrapper>
       <span onClick={testHandle}>박스오피스</span>
