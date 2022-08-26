@@ -35,7 +35,7 @@ function Main() {
 
   return (
     <MainWrapper>
-      <span onClick={testHandle}>박스오피스</span>
+      <span>박스오피스</span>
       <Carousel
         index={index}
         movies={movies}
