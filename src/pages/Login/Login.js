@@ -1,7 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+  GoogleLogin,
+  GoogleOAuthProvider,
+  useGoogleLogin,
+} from '@react-oauth/google';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const google_client =
+    '943618308600-63la6hk3pkuse8c9r11hv2ivng7c2iv0.apps.googleusercontent.com';
+  const goToMain = useNavigate();
+
+  // const login = useGoogleLogin({
+  //   onSuccess: response => console.log(response),
+  // });
+
+  const redirect = token => {
+    console.log(token);
+    if (token) {
+      fetch('http://192.168.0.199:8000/users/login/google', {
+        method: 'POST',
+        headers: {
+          Authorization: token,
+        },
+      })
+        .then(data => data.json())
+        .then(addData => {
+          console.log(addData);
+          // if ((addData.message = 'success!')) {
+          //   localStorage.setItem('token', addData.JWT_ACCESS_TOKEN);
+          //   localStorage.setItem('nickname', addData.nickname);
+          //   localStorage.setItem('profileIcon', addData.profile_image_url);
+          // }
+          // //닉네임, 토큰값
+          // alert('TERRA BOX에 오신 걸 환영합니다 :)');
+          // goToMain('/');
+          // window.location.reload();
+        });
+    }
+  };
+
   return (
     <All>
       <LoginWrapper>
@@ -19,8 +58,18 @@ function Login() {
             >
               <img alt="kakaoBtn" src="/images/kakaoLoginBtn.png" />
             </a>
-            <div>구글버튼</div>
           </ContainerBtn>
+          <GoogleOAuthProvider clientId={google_client}>
+            <GoogleLogin
+              buttonText="로그인"
+              onSuccess={response => {
+                // console.log(response);
+                redirect(response.credential);
+              }}
+              onError={() => alert('로그인에 실패했습니다. 다시 시도하세요')}
+            />
+          </GoogleOAuthProvider>
+          {/* <div onClick={() => login()}>구글 로그인</div> */}
           <ContainerLinks>
             <ContainerSpan>
               <i class="fa-brands fa-facebook" /> 페이스북
@@ -66,7 +115,7 @@ const LoginContainer = styled.div`
   padding: 80px 0px;
   display: flex;
   flex-direction: column;
-  align-item: center;
+  align-items: center;
   width: 80%;
   height: 80%;
   border: 1px solid #e9ecef;
