@@ -30,7 +30,7 @@ function Main() {
   };
 
   const testHandle = () => {
-    setA({ ...a, msg: '안녕하세요', id: 5 });
+    setA({ ...a, msg: '안녕하세요', id: 3 });
   };
 
   return (
