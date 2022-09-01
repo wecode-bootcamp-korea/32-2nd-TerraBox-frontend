@@ -29,8 +29,6 @@ function Main() {
     setIndex(input);
   };
 
-  const testHandle = () => {};
-
   return (
     <MainWrapper>
       <span>박스오피스</span>
