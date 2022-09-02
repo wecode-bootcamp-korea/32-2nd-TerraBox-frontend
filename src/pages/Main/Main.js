@@ -8,7 +8,6 @@ function Main() {
   const [a, setA] = useState({
     id: 0,
     info_list: [],
-    msg: '',
   });
 
   useEffect(() => {
