@@ -7,7 +7,6 @@ function Main() {
   const [movies, setMovies] = useState([]);
   const [a, setA] = useState({
     id: 0,
-    info_list: [],
   });
 
   useEffect(() => {
