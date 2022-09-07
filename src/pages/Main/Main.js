@@ -5,15 +5,15 @@ import Carousel from './Carousel';
 function Main() {
   const [index, setIndex] = useState(1);
   const [movies, setMovies] = useState([]);
-  const [a, setA] = useState({
-    id: 2,
-  });
+  const [a, setA] = useState({});
 
   useEffect(() => {
     fetch('http://15.164.163.31:8000/movies')
       .then(res => res.json())
       .then(data => setMovies(data.result));
   }, []);
+
+  console.log(window.innerWidth);
 
   const leftClickHandler = () => {
     return index !== 1 && setIndex(prev => prev - 1);
