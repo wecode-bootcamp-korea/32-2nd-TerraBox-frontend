@@ -5,7 +5,6 @@ import Carousel from './Carousel';
 function Main() {
   const [index, setIndex] = useState(1);
   const [movies, setMovies] = useState([]);
-  const [a, setA] = useState({});
 
   useEffect(() => {
     fetch('http://15.164.163.31:8000/movies')
