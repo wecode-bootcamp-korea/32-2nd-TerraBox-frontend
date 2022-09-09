@@ -30,8 +30,8 @@ function Booking() {
 
   useEffect(() => {
     fetch(
-      // `http://15.164.163.31:8000/Reserve/movietheater?movie_id=${selectedMovie}&theater_id=${selectedTheater}`
-      'http://15.164.163.31:8000/Reserve/movietheater?movie_id=1&theater_id=1'
+      `http://15.164.163.31:8000/Reserve/movietheater?movie_id=${selectedMovie}&theater_id=${selectedTheater}`
+      // 'http://15.164.163.31:8000/Reserve/movietheater?movie_id=1&theater_id=1'
     )
       .then(res => res.json())
       .then(data => {
@@ -66,12 +66,15 @@ function Booking() {
   };
 
   const goToSeat = () => {
-    navigate('/seat', {
-      state: {
-        movie_theater_id: selectedTheater,
-      },
-    });
+    if (localStorage.getItem('token')) {
+      navigate('/seat', {
+        state: {
+          movie_theater_id: selectedTheater,
+        },
+      });
+    }
   };
+
   return (
     <StyledWrapper>
       <Title>빠른예매</Title>
