@@ -27,7 +27,7 @@ function Login() {
       })
         .then(data => data.json())
         .then(addData => {
-          // console.log(addData);
+          console.log(addData);
           // if ((addData.message = 'success!')) {
           //   localStorage.setItem('token', addData.JWT_ACCESS_TOKEN);
           //   localStorage.setItem('nickname', addData.nickname);
