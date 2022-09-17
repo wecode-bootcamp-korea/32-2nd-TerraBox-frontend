@@ -12,7 +12,7 @@ function Main() {
       .then(data => setMovies(data.result));
   }, []);
 
-  console.log(window.innerWidth);
+  // console.log(navigators);
 
   const leftClickHandler = () => {
     return index !== 1 && setIndex(prev => prev - 1);
